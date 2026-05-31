@@ -1,0 +1,8 @@
+{
+  "name": "Abir Portfolio",
+  "description": "Design Terminal - Print-on-Demand Creative Merchandise Design Studio specializing in high-quality gear for software engineers, ethical hackers, and computer science students run by Ada Lovelace Abir.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

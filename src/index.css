@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+
+  --color-primary: #0563bb;
+  --color-secondary: #45505b;
+  --color-dark: #040b14;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-secondary bg-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-raleway text-dark font-bold;
+  }
+
+  section {
+    @apply py-16 overflow-hidden;
+  }
+}
+
+.section-title {
+  @apply mb-8;
+}
+
+.section-title h2 {
+  @apply text-3xl font-bold mb-5 pb-5 relative;
+}
+
+.section-title h2::after {
+  content: "";
+  @apply absolute left-0 bottom-0 w-12 h-1 bg-primary;
+}
+
+.section-title p {
+  @apply text-gray-600;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-700;
+}
+
